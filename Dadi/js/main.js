@@ -10,20 +10,20 @@
 // GENERO UN NUMERO RANDOM PER IL GIOCATORE
 let myNumber = Math.floor(Math.random() * 6 + 1);
 console.log(myNumber);
-document.getElementById('my_number').innerHTML;
+document.getElementById('my_number').innerHTML = myNumber;
 
 // GENERO UN NUMERO RANDOM PER IL COMPUTER
 let pcNumber = Math.floor(Math.random() * 6 + 1);
 console.log(pcNumber);
-
+document.getElementById('pc_number').innerHTML = pcNumber;
 
 if (myNumber > pcNumber) {
 
-    alert('HAI VINTO');
+    document.getElementById('result').innerHTML = 'HAI VINTO';
 } else if (myNumber < pcNumber) {
-    alert('HAI PERSO');
+    document.getElementById('result').innerHTML = 'HAI PERSO, RITENTA';
 } else {
-    alert('PAREGGIO');
+    document.getElementById('result').innerHTML = 'PAREGGIO, RITENTA';
 }
 
 
