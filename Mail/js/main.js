@@ -16,28 +16,30 @@
 
 // CREO UNA LISTA DI EMAIL
 
-const lista = ["primamail@gmail.it", "secondamail@yahoo.it", "terzamail@yahoo.com", "quartamail@outlook.it"];
+let lista = ["primamail@gmail.it", "secondamail@yahoo.it", "terzamail@yahoo.com", "quartamail@outlook.it"];
 console.log(lista);
 
 // CHIEDO ALL' UTENTE IL SUO INDIRIZZO EMAIL
 let richiestaEmail = prompt('Qual è il tuo indirizzo e-mail?');
-console.log(richiestaEmail);
+// console.log(richiestaEmail);
 
 // const button = document.getElementById("myBtn");
 
-
+let accesso = false;
 
 // CONFRONTO LA MAIL UTENTE CON QUELLE DELLA LISTA CON UN CICLO FOR ()
 
-for (i = 0; i >= lista.length; i++) { }
-
-
-
-if (richiestaEmail == lista[i]) {
-    alert("PUOI ACCEDERE")
-} else {
-    alert("NON PUOI ACCEDERE")
+for (i = 0; i <= lista.length; i++) {
+    accesso = true;
+    console.log(i)
 }
 
 
-// document.getElementById('pippo').value;
+
+if (accesso = true) {
+
+    alert("PUOI ACCEDERE");
+} else {
+    alert("NON PUOI ACCEDERE");
+}
+
